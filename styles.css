@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.grid-square {
+    user-select: none;
+    background-color: white;
+}
