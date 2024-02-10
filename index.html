@@ -8,10 +8,25 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        <input type="number" id="grid-size" min="1" max="100" value="16">
-        <button id="create-grid">Create Grid</button>
-    </div>
-    <div class="container"></div>
+    <side>
+        <div class="settings">
+            <input type="range" id="grid-size" min="4" max="64" value="16">
+            <span id="grid-size-number">16</span>
+        </div>
+        <div class="modes">
+            <input id="color-picker" type="color">
+            <button id="color-mode" class="mode-button selected" onclick="changeMode('color')">Color</button>
+            <button id="rainbow-mode" class="mode-button" onclick="changeMode('rainbow')">Rainbow</button>
+            <button id="eraser-mode" class="mode-button" onclick="changeMode('eraser')">Eraser</button>
+        </div>
+        <div class="additional">
+            <button onclick="clearGrid()">Clear</button>
+            <button id="create-grid">Create Grid</button>
+        </div>
+    </side>
+    <main>
+        <h1>Etch-a-sketch</h1>
+        <div class="container"></div>
+    </main>
 </body>
 </html>
